@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://6rs5lfewhnj8" path="res://assets/bg.png" id="16_og1vs"]
 [ext_resource type="Texture2D" uid="uid://hpwkyutji4mh" path="res://assets/painting.png" id="18_cegan"]
 [ext_resource type="Script" uid="uid://bddxg1ca2mbhd" path="res://scripts/glyph.gd" id="19_0odxb"]
-[ext_resource type="FontFile" uid="uid://cd8434cbp7cs8" path="res://汇文正楷1.001/汇文正楷v1.001.ttf" id="19_getpj"]
+[ext_resource type="FontFile" uid="uid://bt1efolpelkmm" path="res://font/汇文正楷v1.001.ttf" id="19_getpj"]
 [ext_resource type="Script" uid="uid://cyxwv1kcrp0f4" path="res://scripts/hint.gd" id="20_d13ii"]
 [ext_resource type="Texture2D" uid="uid://c1e1sxeb5he7j" path="res://assets/button_square_depth_gradient.png" id="20_lswn8"]
 [ext_resource type="Texture2D" uid="uid://72h3ql8df5lw" path="res://assets/seal3.png" id="21_0odxb"]
