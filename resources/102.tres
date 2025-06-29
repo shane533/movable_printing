@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://cvsgdiy7nv72e"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_3j246"]
+
+[resource]
+script = ExtResource("1_3j246")
+lid = 102
+texts = "李杜文章在，光焰万丈长。"
+cells = Array[String](["文", "万"])
+unlocks = Array[String](["光", "长"])
+has_hint = true
+hint_text = "一生二，二生三，三生万物"
+hint_pos = Vector2(439, 6)
+hint_rotation = 14.10000000000582
+metadata/_custom_type_script = "uid://ilponbfte4mw"

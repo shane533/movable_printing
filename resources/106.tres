@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://phgvuf76oe71"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_wwy1g"]
+
+[resource]
+script = ExtResource("1_wwy1g")
+lid = 106
+texts = "人闲桂花落，夜静春山空。"
+cells = Array[String](["夜", "山"])
+unlocks = Array[String](["人"])
+has_hint = true
+hint_text = "日夜东流无歇时"
+hint_pos = Vector2(563, 432)
+metadata/_custom_type_script = "uid://ilponbfte4mw"

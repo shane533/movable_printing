@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://i4y5k72kbehd"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_eifmm"]
+
+[resource]
+script = ExtResource("1_eifmm")
+lid = 108
+texts = "鸟宿池边树，僧敲月下门。"
+cells = Array[String](["鸟", "月"])
+unlocks = Array[String](["推", "敲", "门"])
+has_hint = true
+hint_text = "鸡犬升天"
+hint_pos = Vector2(265, 472)
+metadata/_custom_type_script = "uid://ilponbfte4mw"

@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://mnl8cc8k71ly"]
+
+[ext_resource type="Texture2D" uid="uid://c1e1sxeb5he7j" path="res://assets/button_square_depth_gradient.png" id="1_a6ev3"]
+[ext_resource type="Texture2D" uid="uid://cuowk6nbusjh6" path="res://assets/button_square_flat.png" id="2_gbrlb"]
+[ext_resource type="Script" uid="uid://clcjk6ttunpmx" path="res://scripts/glyph_button.gd" id="3_opf2d"]
+[ext_resource type="FontFile" uid="uid://bt1efolpelkmm" path="res://font/汇文正楷v1.001.ttf" id="4_1fwlf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_272bh"]
+font = ExtResource("4_1fwlf")
+font_size = 54
+font_color = Color(0, 0, 0, 1)
+
+[node name="TextureButton" type="TextureButton"]
+self_modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+texture_normal = ExtResource("1_a6ev3")
+texture_pressed = ExtResource("2_gbrlb")
+script = ExtResource("3_opf2d")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 59.0
+offset_bottom = 60.0
+text = "活"
+label_settings = SubResource("LabelSettings_272bh")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

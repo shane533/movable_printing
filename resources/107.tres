@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://com456n7wm4hg"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_wrtwq"]
+
+[resource]
+script = ExtResource("1_wrtwq")
+lid = 106
+texts = "鸡声茅店月，人迹板桥霜。"
+cells = Array[String](["月", "人"])
+unlocks = Array[String](["鸡"])
+has_hint = true
+hint_text = "日积月累"
+hint_pos = Vector2(59, 156)
+hint_rotation = 5.600000000005821
+metadata/_custom_type_script = "uid://ilponbfte4mw"

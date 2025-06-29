@@ -1,0 +1,246 @@
+[gd_scene load_steps=27 format=3 uid="uid://ctdofwictxyro"]
+
+[ext_resource type="Script" uid="uid://dcsqsp3j46y25" path="res://scripts/main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="2_cegan"]
+[ext_resource type="Script" uid="uid://drxd2xa2hp3pm" path="res://scripts/background.gd" id="3_1bvp3"]
+[ext_resource type="Resource" uid="uid://05xgmktt5gg6" path="res://resources/101.tres" id="3_82xsv"]
+[ext_resource type="Resource" uid="uid://cvsgdiy7nv72e" path="res://resources/102.tres" id="4_getpj"]
+[ext_resource type="Texture2D" uid="uid://8bmgxu3u1wu4" path="res://assets/line.png" id="5_7mycd"]
+[ext_resource type="Resource" uid="uid://ij4v6sgd3td7" path="res://resources/103.tres" id="5_ryguw"]
+[ext_resource type="Resource" uid="uid://dublqmbvpfk8l" path="res://resources/104.tres" id="6_d13ii"]
+[ext_resource type="Resource" uid="uid://2a2ointy0gq2" path="res://resources/105.tres" id="7_1u8w0"]
+[ext_resource type="Resource" uid="uid://phgvuf76oe71" path="res://resources/106.tres" id="8_0odxb"]
+[ext_resource type="Resource" uid="uid://com456n7wm4hg" path="res://resources/107.tres" id="9_lswn8"]
+[ext_resource type="Resource" uid="uid://i4y5k72kbehd" path="res://resources/108.tres" id="10_a6jrf"]
+[ext_resource type="Resource" uid="uid://dalb43epiifgi" path="res://resources/109.tres" id="11_xuqvo"]
+[ext_resource type="Resource" uid="uid://edbsaprl5t7f" path="res://resources/110.tres" id="12_qsp4k"]
+[ext_resource type="Resource" uid="uid://caijuu25f6k7v" path="res://resources/111.tres" id="13_kq58d"]
+[ext_resource type="Resource" uid="uid://dkbgg8pcn08i0" path="res://resources/112.tres" id="14_seu75"]
+[ext_resource type="Resource" uid="uid://bdu2v1odqnd8t" path="res://resources/113.tres" id="15_htxhm"]
+[ext_resource type="Texture2D" uid="uid://6rs5lfewhnj8" path="res://assets/bg.png" id="16_og1vs"]
+[ext_resource type="Texture2D" uid="uid://hpwkyutji4mh" path="res://assets/painting.png" id="18_cegan"]
+[ext_resource type="Script" uid="uid://bddxg1ca2mbhd" path="res://scripts/glyph.gd" id="19_0odxb"]
+[ext_resource type="FontFile" uid="uid://cd8434cbp7cs8" path="res://汇文正楷1.001/汇文正楷v1.001.ttf" id="19_getpj"]
+[ext_resource type="Script" uid="uid://cyxwv1kcrp0f4" path="res://scripts/hint.gd" id="20_d13ii"]
+[ext_resource type="Texture2D" uid="uid://c1e1sxeb5he7j" path="res://assets/button_square_depth_gradient.png" id="20_lswn8"]
+[ext_resource type="Texture2D" uid="uid://72h3ql8df5lw" path="res://assets/seal3.png" id="21_0odxb"]
+[ext_resource type="LabelSettings" uid="uid://byx572q5a8ic4" path="res://resources/glyph.tres" id="21_a6jrf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ryguw"]
+font = ExtResource("19_getpj")
+font_size = 48
+font_color = Color(0.7921569, 0.54901963, 0.49411765, 1)
+outline_size = 1
+outline_color = Color(0.9607843, 0, 0, 1)
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("buttonContainer", "questionContainer", "painting", "hint_panel", "container")]
+script = ExtResource("1_h2yge")
+buttonContainer = NodePath("Background/ScrollContainer/GridContainer")
+questionContainer = NodePath("Background/QustionContainer")
+painting = NodePath("Background/TextureRect")
+alllines = Array[ExtResource("2_cegan")]([ExtResource("3_82xsv"), ExtResource("4_getpj"), ExtResource("5_ryguw"), ExtResource("6_d13ii"), ExtResource("7_1u8w0"), ExtResource("8_0odxb"), ExtResource("9_lswn8"), ExtResource("10_a6jrf"), ExtResource("11_xuqvo"), ExtResource("12_qsp4k"), ExtResource("13_kq58d"), ExtResource("14_seu75"), ExtResource("15_htxhm")])
+hint_panel = NodePath("Background/Hints")
+container = NodePath("Background/Container")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 1280.0
+offset_bottom = 832.0
+texture = ExtResource("16_og1vs")
+script = ExtResource("3_1bvp3")
+
+[node name="TextureRect" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 949.0
+offset_bottom = 540.0
+texture = ExtResource("18_cegan")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_left = 992.0
+offset_top = 339.0
+offset_right = 1032.0
+offset_bottom = 379.0
+
+[node name="Hints" type="Control" parent="Background"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background"]
+layout_mode = 0
+offset_left = 964.0
+offset_top = 11.0
+offset_right = 1273.0
+offset_bottom = 715.0
+
+[node name="GridContainer" type="GridContainer" parent="Background/ScrollContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="QustionContainer" type="VBoxContainer" parent="Background"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 565.0
+offset_right = 944.0
+offset_bottom = 725.0
+
+[node name="Control" type="Control" parent="Background" node_paths=PackedStringArray("CharLabel")]
+visible = false
+anchors_preset = 0
+offset_left = 305.0
+offset_top = 542.0
+offset_right = 345.0
+offset_bottom = 582.0
+script = ExtResource("19_0odxb")
+CharLabel = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control"]
+modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("20_lswn8")
+
+[node name="Label" type="Label" parent="Background/Control"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 69.0
+offset_bottom = 72.0
+text = "活"
+label_settings = ExtResource("21_a6jrf")
+
+[node name="Control2" type="Control" parent="Background" node_paths=PackedStringArray("CharLabel")]
+visible = false
+anchors_preset = 0
+offset_left = 298.0
+offset_top = 164.0
+offset_right = 338.0
+offset_bottom = 204.0
+script = ExtResource("19_0odxb")
+CharLabel = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control2"]
+modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("20_lswn8")
+
+[node name="Label" type="Label" parent="Background/Control2"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 69.0
+offset_bottom = 72.0
+text = "字"
+label_settings = ExtResource("21_a6jrf")
+
+[node name="Control3" type="Control" parent="Background" node_paths=PackedStringArray("CharLabel")]
+visible = false
+anchors_preset = 0
+offset_left = 497.0
+offset_top = 132.0
+offset_right = 537.0
+offset_bottom = 172.0
+script = ExtResource("19_0odxb")
+CharLabel = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control3"]
+modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("20_lswn8")
+
+[node name="Label" type="Label" parent="Background/Control3"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 69.0
+offset_bottom = 72.0
+text = "印"
+label_settings = ExtResource("21_a6jrf")
+
+[node name="Control4" type="Control" parent="Background" node_paths=PackedStringArray("CharLabel")]
+visible = false
+anchors_preset = 0
+offset_left = 681.0
+offset_top = 100.0
+offset_right = 721.0
+offset_bottom = 140.0
+script = ExtResource("19_0odxb")
+CharLabel = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="Background/Control4"]
+modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("20_lswn8")
+
+[node name="Label" type="Label" parent="Background/Control4"]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 69.0
+offset_bottom = 72.0
+text = "刷"
+label_settings = ExtResource("21_a6jrf")
+
+[node name="Container" type="Control" parent="Background"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Hint" type="Control" parent="Background" node_paths=PackedStringArray("label", "bg")]
+anchors_preset = 0
+offset_left = 1186.0
+offset_top = 574.0
+offset_right = 1269.0
+offset_bottom = 812.0
+script = ExtResource("20_d13ii")
+label = NodePath("HintLabel")
+bg = NodePath("Background")
+
+[node name="Background" type="NinePatchRect" parent="Background/Hint"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 135.0
+texture = ExtResource("21_0odxb")
+region_rect = Rect2(0, 0, 64, 64)
+patch_margin_left = 39
+patch_margin_top = 38
+patch_margin_right = 41
+patch_margin_bottom = 44
+
+[node name="HintLabel" type="Label" parent="Background/Hint"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 13.0
+offset_right = 544.0
+offset_bottom = 226.0
+text = "浩
+汤"
+label_settings = SubResource("LabelSettings_ryguw")
+
+[node name="Line1" type="TextureRect" parent="."]
+modulate = Color(0.28668356, 0.2866836, 0.28668356, 1)
+offset_left = -73.0
+offset_top = 540.0
+offset_right = 951.0
+offset_bottom = 550.0
+texture = ExtResource("5_7mycd")
+expand_mode = 1
+
+[node name="Line2" type="TextureRect" parent="."]
+modulate = Color(0.28668356, 0.2866836, 0.28668356, 1)
+offset_left = 950.0
+offset_top = 11.0
+offset_right = 960.0
+offset_bottom = 731.0
+texture = ExtResource("5_7mycd")
+expand_mode = 1
+
+[connection signal="s_create_new_glyph" from="Background" to="." method="create_new_glyph"]

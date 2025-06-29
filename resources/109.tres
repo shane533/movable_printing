@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://dalb43epiifgi"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_nb0xi"]
+
+[resource]
+script = ExtResource("1_nb0xi")
+lid = 109
+texts = "野旷天低树，江清月近人。"
+cells = Array[String](["江", "人"])
+unlocks = Array[String](["近"])
+metadata/_custom_type_script = "uid://ilponbfte4mw"

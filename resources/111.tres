@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://caijuu25f6k7v"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_6lm30"]
+
+[resource]
+script = ExtResource("1_6lm30")
+lid = 111
+texts = "国破山河在，城春草木深。"
+cells = Array[String](["破", "春"])
+unlocks = Array[String](["木"])
+has_hint = true
+hint_text = "四季流转，破镜难圆"
+hint_pos = Vector2(361, 167)
+hint_rotation = 5.600000000005821
+metadata/_custom_type_script = "uid://ilponbfte4mw"

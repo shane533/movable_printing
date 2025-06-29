@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://dkbgg8pcn08i0"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_qh5ra"]
+
+[resource]
+script = ExtResource("1_qh5ra")
+lid = 112
+texts = "情人怨遥夜，竟夕起相思。"
+cells = Array[String](["人", "夜"])
+unlocks = Array[String](["夕"])
+metadata/_custom_type_script = "uid://ilponbfte4mw"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://bdu2v1odqnd8t"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_xsc5x"]
+
+[resource]
+script = ExtResource("1_xsc5x")
+lid = 113
+texts = "不堪盈手赠，还寝梦佳期。"
+cells = Array[String](["梦"])
+metadata/_custom_type_script = "uid://ilponbfte4mw"

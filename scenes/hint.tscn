@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct8wg1x2ft724"]
+
+[ext_resource type="Texture2D" uid="uid://72h3ql8df5lw" path="res://assets/seal3.png" id="1_nl54n"]
+[ext_resource type="Script" uid="uid://cyxwv1kcrp0f4" path="res://scripts/hint.gd" id="1_rcwjh"]
+[ext_resource type="FontFile" uid="uid://bt1efolpelkmm" path="res://font/汇文正楷v1.001.ttf" id="2_rcwjh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ryguw"]
+font = ExtResource("2_rcwjh")
+font_size = 48
+font_color = Color(0.7921569, 0.54901963, 0.49411765, 1)
+outline_size = 1
+outline_color = Color(0.9607843, 0, 0, 1)
+
+[node name="Hint" type="Control" node_paths=PackedStringArray("label", "bg")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rcwjh")
+label = NodePath("HintLabel")
+bg = NodePath("Background")
+
+[node name="Background" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 370.0
+offset_bottom = 84.0
+texture = ExtResource("1_nl54n")
+region_rect = Rect2(0, 0, 64, 64)
+patch_margin_left = 39
+patch_margin_top = 38
+patch_margin_right = 41
+patch_margin_bottom = 44
+
+[node name="HintLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 13.0
+offset_right = 544.0
+offset_bottom = 64.0
+text = "日夜东流无歇时"
+label_settings = SubResource("LabelSettings_ryguw")

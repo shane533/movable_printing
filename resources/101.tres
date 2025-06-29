@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://05xgmktt5gg6"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_b1ftv"]
+
+[resource]
+script = ExtResource("1_b1ftv")
+lid = 101
+texts = "亲朋无一字，老病有孤舟"
+cells = Array[String](["字"])
+unlocks = Array[String](["一", "舟"])
+has_hint = true
+hint_text = "活字皆可挪"
+hint_pos = Vector2(991, 132)
+hint_rotation = -8.5
+metadata/_custom_type_script = "uid://ilponbfte4mw"

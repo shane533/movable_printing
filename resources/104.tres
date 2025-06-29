@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://dublqmbvpfk8l"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_aui81"]
+
+[resource]
+script = ExtResource("1_aui81")
+lid = 104
+texts = "迢迢牵牛星，皎皎河汉女"
+cells = Array[String](["星", "汉"])
+unlocks = Array[String](["河"])
+has_hint = true
+hint_text = "星汉灿烂"
+hint_pos = Vector2(738, 38)
+hint_rotation = -8.39999999999418
+metadata/_custom_type_script = "uid://ilponbfte4mw"

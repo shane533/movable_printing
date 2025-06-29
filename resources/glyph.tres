@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://byx572q5a8ic4"]
+
+[ext_resource type="FontFile" uid="uid://bt1efolpelkmm" path="res://font/汇文正楷v1.001.ttf" id="1_8ttjo"]
+
+[resource]
+font = ExtResource("1_8ttjo")
+font_size = 54
+font_color = Color(0, 0, 0, 1)

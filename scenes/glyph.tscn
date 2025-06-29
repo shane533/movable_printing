@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7b0ymm082hen"]
+
+[ext_resource type="Script" uid="uid://bddxg1ca2mbhd" path="res://scripts/glyph.gd" id="1_aetn8"]
+[ext_resource type="Texture2D" uid="uid://c1e1sxeb5he7j" path="res://assets/button_square_depth_gradient.png" id="2_p0ypw"]
+[ext_resource type="LabelSettings" uid="uid://byx572q5a8ic4" path="res://resources/glyph.tres" id="3_aetn8"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("CharLabel")]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 176.0
+offset_top = 88.0
+offset_right = 216.0
+offset_bottom = 128.0
+script = ExtResource("1_aetn8")
+CharLabel = NodePath("Label")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("2_p0ypw")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 69.0
+offset_bottom = 72.0
+text = "活"
+label_settings = ExtResource("3_aetn8")

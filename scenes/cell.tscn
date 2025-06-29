@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://btid7ok8o4ssf"]
+
+[ext_resource type="Texture2D" uid="uid://crrwsrr6ivhi0" path="res://assets/input_square.png" id="1_gwrgs"]
+[ext_resource type="Script" uid="uid://c3ptchmkxradw" path="res://scripts/cell.gd" id="2_2yjhv"]
+
+[node name="TextureRect" type="TextureRect"]
+self_modulate = Color(0.8, 0.49019608, 0.41960785, 1)
+offset_left = -35.0
+offset_top = -7.0
+offset_right = 29.0
+offset_bottom = 57.0
+texture = ExtResource("1_gwrgs")
+expand_mode = 1
+script = ExtResource("2_2yjhv")

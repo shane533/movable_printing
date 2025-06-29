@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://2a2ointy0gq2"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_8mgnw"]
+
+[resource]
+script = ExtResource("1_8mgnw")
+lid = 105
+texts = "大漠孤烟直，长河落日圆"
+cells = Array[String](["长", "日"])
+unlocks = Array[String](["圆"])
+has_hint = true
+hint_text = "光天化日"
+hint_pos = Vector2(526, 151)
+metadata/_custom_type_script = "uid://ilponbfte4mw"

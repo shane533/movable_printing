@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://ij4v6sgd3td7"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_j0qy2"]
+
+[resource]
+script = ExtResource("1_j0qy2")
+lid = 103
+texts = "七八个星天外，两三点雨山前。"
+cells = Array[String](["七", "八", "三"])
+unlocks = Array[String](["星", "天", "山"])
+metadata/_custom_type_script = "uid://ilponbfte4mw"

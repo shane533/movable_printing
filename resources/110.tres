@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="OneLine" load_steps=2 format=3 uid="uid://edbsaprl5t7f"]
+
+[ext_resource type="Script" uid="uid://ilponbfte4mw" path="res://scripts/one_line.gd" id="1_dpjr1"]
+
+[resource]
+script = ExtResource("1_dpjr1")
+lid = 110
+texts = "居高声自远，非是藉秋风。"
+cells = Array[String](["声", "远"])
+unlocks = Array[String](["秋"])
+has_hint = true
+hint_text = "推敲推敲"
+hint_pos = Vector2(404, 330)
+metadata/_custom_type_script = "uid://ilponbfte4mw"
